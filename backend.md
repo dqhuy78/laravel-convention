@@ -1,6 +1,6 @@
 ## 1. Commands
 
-Các command tạo ra không cần có tiền tố `...Command` trong tên class và tên file. Ví dụ:
+Các command tạo ra không cần có hậu tố `...Command` trong tên class và tên file. Ví dụ:
 
 
 *// Bad*
@@ -127,7 +127,7 @@ Invoke controller không cần hậu tố `Controller` trong tên class và này
 
 ## 4. Middleware
 
-Các middleware tạo ra không cần có tiền tố `...Middleware` trong tên class và tên file. Ví dụ:
+Các middleware tạo ra không cần có hậu tố `...Middleware` trong tên class và tên file. Ví dụ:
 
 *// Bad*
 

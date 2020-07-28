@@ -2,8 +2,8 @@
 
 Các command tạo ra không cần có tiền tố `...Command` trong tên class và tên file. Ví dụ:
 
-<style>i{color:red;}</style>
-<i>// Bad</i>
+
+*// Bad*
 
 ```php
 // app/Console/Commands/DoSomeThingCommand.php
@@ -14,8 +14,7 @@ class DoSomeThingCommand extends Command
 }
 ```
 
-<style>em{color:green;}</style>
-<em>// Good</em>
+*// Good*
 
 ```php
 // app/Console/Commands/DoSomeThing.php
@@ -30,7 +29,7 @@ class DoSomeThing extends Command
 
 Các biến dạng hằng số sử dụng ở nhiều chỗ khác nhau thì cần tạo một file riêng để lưu trữ các biến này để có thể tái sử dụng về sau. Ví dụ: ta có 2 role là `admin` và `member`, thay vì code như sau:
 
-<i>// Bad</i>
+*// Bad*
 
 ```php
 $user->update(['role' => 'admin'])
@@ -50,7 +49,7 @@ final class Role
 
 Và sử dụng lại:
 
-<em>// Good</em>
+*// Good*
 
 ```php
 use App\Enums\Role;
@@ -130,7 +129,7 @@ Invoke controller không cần hậu tố `Controller` trong tên class và này
 
 Các middleware tạo ra không cần có tiền tố `...Middleware` trong tên class và tên file. Ví dụ:
 
-<i>// Bad</i>
+*// Bad*
 
 ```php
 // app/Http/Middleware/VerifyAdminMiddleware.php
@@ -141,7 +140,7 @@ class VerifyAdminMiddleware
 }
 ```
 
-<em>// Good</em>
+*// Good*
 
 ```php
 // app/Http/Middleware/VerifyAdmin.php
@@ -174,7 +173,7 @@ class StorePostRequest extends FormRequest
 - Trường hợp dữ liệu trả về cần phân biệt theo role thì có thể sử dụng các hàm như `->whenMerge()` để làm điều này.
 - Ouput key của Resource nên ở dạng `camelCase`, ví dụ:
 
-<i>// Bad</i>
+*// Bad*
 
 ```php
 // app/Http/Resources/PostResource.php
@@ -192,7 +191,7 @@ class PostResource extends ShareResource
 }
 ```
 
-<em>// Good</em>
+*// Good*
 
 ```php
 class PostResource extends ShareResource
